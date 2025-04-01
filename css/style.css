@@ -379,14 +379,15 @@ header #dateTime{
     align-items:center;
     flex-direction: column;
     background-color: #ffffff;
-    width:80%;
-    max-width: 80%;
-    min-height: 300px;
+    width: 95%;
+    max-width: 100%;
+    min-height: 400px;
     border-radius: 15px;
     color: black;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
-    transition: 0.5s;
+    transition: 1.25s;
+    transition-behavior: allow-discrete;
 }
 .questionImage{
     width: 100%;
@@ -502,7 +503,7 @@ header #dateTime{
 }
 #questionHeader{
     width: 100%;
-    height: 50px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -514,6 +515,7 @@ header #dateTime{
     align-items: center;
     justify-content: center;
     text-wrap: nowrap;
+    font-size: 36px;
 }
 #questionHeaderText h1{
     position: absolute;
@@ -530,7 +532,7 @@ header #dateTime{
     position: absolute;
     right: 0;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 25px;
 }
 #backButtonCon{
@@ -540,10 +542,10 @@ header #dateTime{
     align-items: center;
 }
 #backButtonA{
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     background-color: #ffffff;
-    margin-left: 15px;
+    margin-left: 20px;
     display: flex;
     align-items: center;
     border: none;
@@ -551,10 +553,10 @@ header #dateTime{
 }
 
 #backButtonC{
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     background-color: #ffffff;
-    margin-left: 15px;
+    margin-left: 20px;
     display: none;
     align-items: center;
     border: none;
@@ -569,25 +571,131 @@ header #dateTime{
     transform: scale(1.15);
 }
 #questionHeader img{
-    width: 25px;
+    width: 35px;
     transition: 0.33s ease-in-out;
 }
 #question{
-    padding-top: 1%;
     width: 90%;
-    height: 50px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 24px;
+}
+#answerFeedback{
+    height: 0px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation-name: feedback;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+@keyframes feedback{
+    0% {height: 0px;}
+    0% {opacity: 0;}
+    1% {height: 40px;}
+    1% {opacity: 1;}
+    50% {height: 40px;}
+    50% {opacity: 1;}
+    100% {height: 0px;}
+    100% {opacity: 0;}
+}
+#answerFeedback2{
+    height: 0px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation-name: feedback2;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+@keyframes feedback2{
+    0% {height: 0px;}
+    0% {opacity: 0;}
+    1% {height: 40px;}
+    1% {opacity: 1;}
+    50% {height: 40px;}
+    50% {opacity: 1;}
+    100% {height: 0px;}
+    100% {opacity: 0;}
+}
+#answerFeedback3{
+    height: 0px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation-name: feedback3;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+@keyframes feedback3{
+    0% {height: 0px;}
+    0% {opacity: 0;}
+    1% {height: 40px;}
+    1% {opacity: 1;}
+    50% {height: 40px;}
+    50% {opacity: 1;}
+    100% {height: 0px;}
+    100% {opacity: 0;}
+}
+#answerFeedback4{
+    height: 0px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation-name: feedback4;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+@keyframes feedback4{
+    0% {height: 0px;}
+    0% {opacity: 0;}
+    1% {height: 40px;}
+    1% {opacity: 1;}
+    50% {height: 40px;}
+    50% {opacity: 1;}
+    100% {height: 0px;}
+    100% {opacity: 0;}
+}
+#answerFeedback5{
+    height: 0px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation-name: feedback5;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+@keyframes feedback5{
+    0% {height: 0px;}
+    0% {opacity: 0;}
+    1% {height: 40px;}
+    1% {opacity: 1;}
+    50% {height: 40px;}
+    50% {opacity: 1;}
+    100% {height: 0px;}
+    100% {opacity: 0;}
 }
 #answerCon{
     width: 90%;
-    height: 150px;
+    height: 175px;
     display: grid;
     align-items: center;
     grid-template-columns: 50% 50%;
     justify-content: center;
+    margin-bottom: 25px;
 }
 .answerInput{
     width: 100%;
@@ -622,7 +730,7 @@ header #dateTime{
     100% {display: flex;}
 }
 #completeImg img{
-    height: 90%;
+    height: 60%;
     
 }
 #correctImg{
@@ -653,15 +761,15 @@ header #dateTime{
     display: none;
 }
 #answerCon p{
-    width: 100px;
-    height: 50px;
+    height: 60px;
+    width: 40%;
     border: none;
     transition: 0.2s ease-in-out;
     background-color: #afafaf;
     color: #ffffff;
     font-weight: 700;
     font-size: 18px;
-    border-radius: 25px;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -669,13 +777,14 @@ header #dateTime{
 }
 #completeImg{
     width: 100%;
-    height: 150px;
+    height: 225px;
     display: none;
     align-items: center;
     justify-content: center;
 }
 #nextButton{
     width: 100%;
+    bottom: 0;
 }
 #nextButton h1{ 
     height: 50px;
@@ -686,7 +795,7 @@ header #dateTime{
 }
 #nextButton button{
     width:100%;
-    height: 50px;
+    height: 75px;
     border: none;
     padding: none;
     border-radius: 0px 0px 15px 15px;
@@ -698,36 +807,22 @@ header #dateTime{
     display: none;
 }
 
-@media screen and (min-width: 360px){
+@media screen and (min-width: 350px){
     #answerCon p{
-        width: 125px;
-        font-size: 20px;
-    }
-}
-@media screen and (min-width: 530px){
-    #answerCon p{
-        width: 150px;
+        width: 37.5%;
         font-size: 22px;
     }
     .questionCon{
-        width: 75%;
-    }
-    #signupForm{
-        width: 75%;
+        width: 90%;
     }
 }
-@media screen and (min-width: 650px){
-    #answerCon p{
-        width: 200px;
-    }
 
-}
-@media screen and (min-width: 800px){
+@media screen and (min-width: 550px){
     #answerCon p{
-        width: 225px;
+        width: 37.5%;
     }
     .questionCon{
-        width: 65%;
+        width: 90%;
     }
     #signupForm{
         width: 65%;
@@ -738,19 +833,18 @@ header #dateTime{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-
     }
     .quizTab{
         margin-left: 2.5%;
         margin-right: 2.5%;
     }
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 850px){
     #answerCon p{
-        width: 200px;
+        width: 32.5%;
     }
     .questionCon{
-        width: 50%;
+        width: 80%;
     }
     #signupForm{
         width: 50%;
@@ -758,12 +852,12 @@ header #dateTime{
 
 }
 
-@media screen and (min-width: 1250px){
+@media screen and (min-width: 1150px){
     #answerCon p{
-        width: 250px;
+        width: 30%;
     }
     .questionCon{
-        width: 45%;
+        width: 70%;
     }
     #signupForm{
         width: 45%;
@@ -772,6 +866,40 @@ header #dateTime{
         flex-direction: row;
     }
 }
+
+@media screen and (min-width: 1450px){
+    #answerCon p{
+        width: 25%;
+    }
+    .questionCon{
+        width: 60%;
+    }
+    #signupForm{
+        width: 35%;
+    }
+}
+@media screen and (min-width: 1750px){
+    #answerCon p{
+        width: 20%;
+    }
+    .questionCon{
+        width: 50%;
+    }
+    #signupForm{
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1400px){
     .quizTabCon3{
         display: flex;
@@ -799,27 +927,5 @@ header #dateTime{
     }
     #indexHeader p{
         min-width: 50%;
-    }
-}
-@media screen and (min-width: 1550px){
-    #answerCon p{
-        width: 235px;
-    }
-    .questionCon{
-        width: 35%;
-    }
-    #signupForm{
-        width: 35%;
-    }
-}
-@media screen and (min-width: 1750px){
-    #answerCon p{
-        width: 240px;
-    }
-    .questionCon{
-        width: 30%;
-    }
-    #signupForm{
-        width: 30%;
     }
 }
