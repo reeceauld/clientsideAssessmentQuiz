@@ -1,0 +1,825 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter;
+    
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #EBEBEB;
+}
+.container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#signupForm{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width:80%;
+    border-radius: 15px;
+    color: black;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+}
+form h1{
+    font-size: 28px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+form #name{
+    width:85%;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    background: url(../images/user-solid.svg) no-repeat scroll 12.5px 7.5px;
+    background-color: #D3D3D3;
+    background-size: 20px;
+}
+form #email{
+    width:85%;
+    height: 40px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    background: url(../images/at-solid.svg) no-repeat scroll 10px 7.5px;
+    background-color: #D3D3D3;
+    background-size: 25px;
+}
+form input::placeholder{
+    color: #ffffff;
+}
+.submitBtn{
+    width: 100%;
+}
+.submitBtn h1{ 
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+.submitBtn button{
+    width:100%;
+    height: 60px;
+    border: none;
+    padding: none;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #50A2FF;
+    color: #ffffff;
+    cursor: pointer;
+}
+header{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+header #nameWelcome{
+    padding-left: 2.5%;
+}
+header #dateTime{
+    position: absolute;
+    right: 0;
+    padding-right: 2.5%;
+}
+.quizTabCon{
+    width: 100%;
+    height: 100%;
+    padding-top: 10vh;
+    background-color: #EBEBEB;
+    
+}
+.quizTabCon a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.quizTabCon2{
+    width: 100%;
+    background-color: #EBEBEB;
+}
+.quizTabCon3{
+    width: 100%;
+    min-height: 100%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 50px;
+    background-color: #EBEBEB;
+}
+.quizTabCon3 a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#indexHeader{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+#indexHeader p{
+    min-width: 30%;
+    font-size: 30px;
+    background-color: #50A2FF;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 7.5px 10px;
+}
+.quizTab{
+    margin-top: 50px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 800px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px 15px 20px 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 7.5px 10px;
+}
+
+
+#quizNameText{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+#quizScoreStickerGeo {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreStickerHis{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreStickerMat{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreStickerPhy{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreStickerChe{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreStickerSta{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreStickerGeo2{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreStickerHis2{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreStickerMat2{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreStickerPhy2{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreStickerChe2{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreStickerSta2{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 0px 0px 15px 0px;
+}
+#quizScoreCounterGeo{
+    display: none;
+}
+#quizScoreCounterHis{
+    display: none;
+}
+#quizScoreCounterMat{
+    display: none;
+}
+#quizScoreCounterPhy{
+    display: none;
+}
+#quizScoreCounterChe{
+    display: none;
+}
+#quizScoreCounterSta{
+    display: none;
+}
+.quizTab img{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    max-width: 95%;
+    max-height: 650px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.quizName{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0px 0px 15px 15px;
+}
+.quizName h1{
+    color: white;
+}
+.quizGeography{
+    background-color:  #50A2FF;
+}
+.quizStatistics{
+    background-color: #50A2FF;
+}
+.quizHistory{
+    background-color:  #50A2FF;
+}
+.quizMaths{
+    background-color: #50A2FF;
+}
+.quizPhysics{
+    background-color: #50A2FF;
+}
+.quizChemistry{
+    background-color: #50A2FF;
+}
+.quizCon{
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.questionCon{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width:80%;
+    max-width: 80%;
+    min-height: 300px;
+    border-radius: 15px;
+    color: black;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    transition: 0.5s;
+}
+.questionImage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+    
+}
+.questionImage img{
+    width: 75%;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    object-fit: cover;
+    border: solid 3px #606060;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 7.5px 10px;
+}
+#feedbackFlash{
+    display:none;
+    align-items:center;
+    flex-direction: column;
+    width:200vw;
+    height: 200vh;
+    border-radius: 15px;
+    position: absolute;
+    color: black;
+    z-index: 0;
+    animation-name: flash;
+    animation-duration: 1.25s;
+}
+@keyframes flash{
+    0% {display: flex;}
+    0% {opacity: 0.5;}
+    100% {display: none;}
+    100% {opacity: 0;}
+}
+#feedbackFlash2{
+    display:none;
+    align-items:center;
+    flex-direction: column;
+    width:200vw;
+    height: 200vh;
+    border-radius: 15px;
+    position: absolute;
+    color: black;
+    z-index: 0;
+    animation-name: flash2;
+    animation-duration: 1.25s;
+}
+@keyframes flash2{
+    0% {display: flex;}
+    0% {opacity: 0.5;}
+    100% {display: none;}
+    100% {opacity: 0;}
+}
+#feedbackFlash3{
+    display:none;
+    align-items:center;
+    flex-direction: column;
+    width:200vw;
+    height: 200vh;
+    border-radius: 15px;
+    position: absolute;
+    color: black;
+    z-index: 0;
+    animation-name: flash3;
+    animation-duration: 1.25s;
+}
+@keyframes flash3{
+    0% {display: flex;}
+    0% {opacity: 0.5;}
+    100% {display: none;}
+    100% {opacity: 0;}
+}
+#feedbackFlash4{
+    display:none;
+    align-items:center;
+    flex-direction: column;
+    width:200vw;
+    height: 200vh;
+    border-radius: 15px;
+    position: absolute;
+    color: black;
+    z-index: 0;
+    animation-name: flash4;
+    animation-duration: 1.25s;
+}
+@keyframes flash4{
+    0% {display: flex;}
+    0% {opacity: 0.5;}
+    100% {display: none;}
+    100% {opacity: 0;}
+}
+#feedbackFlash5{
+    display:none;
+    align-items:center;
+    flex-direction: column;
+    width:200vw;
+    height: 200vh;
+    border-radius: 15px;
+    position: absolute;
+    color: black;
+    z-index: 0;
+    animation-name: flash5;
+    animation-duration: 1.25s;
+}
+@keyframes flash5{
+    0% {display: flex;}
+    0% {opacity: 0.5;}
+    100% {display: none;}
+    100% {opacity: 0;}
+}
+#questionHeader{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#questionHeaderText{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+}
+#questionHeaderText h1{
+    position: absolute;
+    text-wrap: nowrap;
+    width: 100%;
+}
+#quizScoreCon{
+    width:100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#quizScoreText{
+    position: absolute;
+    right: 0;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 25px;
+}
+#backButtonCon{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#backButtonA{
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+#backButtonC{
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    margin-left: 15px;
+    display: none;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: 0.33s ease-in-out;
+}
+#backButtonC:hover{
+    transform: rotate(-45deg);
+}
+
+#backButtonCon img:hover{
+    transform: scale(1.15);
+}
+#questionHeader img{
+    width: 25px;
+    transition: 0.33s ease-in-out;
+}
+#question{
+    padding-top: 1%;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#answerCon{
+    width: 90%;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+.answerInput{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#feedbackCon{
+    width: 90%;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#completeImg{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@keyframes wow{
+    0% {height: 0px;}
+    0% {rotate: -360deg;}
+    0% {display: none;}
+    80% {rotate: 15deg;}
+    80% {height: 150px;}
+    100% {height: 135px;}
+    100% {rotate: 0deg;}
+    100% {display: flex;}
+}
+#completeImg img{
+    height: 90%;
+    
+}
+#correctImg{
+    display: none;
+    transition: 2s ease-in-out;
+    animation: wow 2s ease-in-out;
+}
+#incorrectImg{
+    display: none;
+    transition: 2s ease-in-out;
+    animation: wow 2s ease-in-out;
+}
+#answerCon input{
+    width: 100%;
+    height: 75%;
+    border: none;
+    transition: 0.2s ease-in-out;
+    background-color: #afafaf;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+#answerCon input h3{
+    display: none;
+}
+#answerCon p{
+    width: 100px;
+    height: 50px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    background-color: #afafaf;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+#completeImg{
+    width: 100%;
+    height: 150px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#nextButton{
+    width: 100%;
+}
+#nextButton h1{ 
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+#nextButton button{
+    width:100%;
+    height: 50px;
+    border: none;
+    padding: none;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #50A2FF;
+    color: #ffffff;
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (min-width: 360px){
+    #answerCon p{
+        width: 125px;
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 530px){
+    #answerCon p{
+        width: 150px;
+        font-size: 22px;
+    }
+    .questionCon{
+        width: 75%;
+    }
+    #signupForm{
+        width: 75%;
+    }
+}
+@media screen and (min-width: 650px){
+    #answerCon p{
+        width: 200px;
+    }
+
+}
+@media screen and (min-width: 800px){
+    #answerCon p{
+        width: 225px;
+    }
+    .questionCon{
+        width: 65%;
+    }
+    #signupForm{
+        width: 65%;
+    }
+    .quizTabCon{
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .quizTab{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+@media screen and (min-width: 1000px){
+    #answerCon p{
+        width: 200px;
+    }
+    .questionCon{
+        width: 50%;
+    }
+    #signupForm{
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1250px){
+    #answerCon p{
+        width: 250px;
+    }
+    .questionCon{
+        width: 45%;
+    }
+    #signupForm{
+        width: 45%;
+    }
+    .quizTabCon{
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 1400px){
+    .quizTabCon3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .quizTabCon2{
+        display: none;
+    }
+    .quizTab{
+        margin-top: 50px;
+        width: 80%;
+        max-width: 450px;
+        max-height: 650px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px 15px 20px 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 5px 7.5px 10px;
+        position: relative;
+    }
+    #indexHeader p{
+        min-width: 50%;
+    }
+}
+@media screen and (min-width: 1550px){
+    #answerCon p{
+        width: 235px;
+    }
+    .questionCon{
+        width: 35%;
+    }
+    #signupForm{
+        width: 35%;
+    }
+}
+@media screen and (min-width: 1750px){
+    #answerCon p{
+        width: 240px;
+    }
+    .questionCon{
+        width: 30%;
+    }
+    #signupForm{
+        width: 30%;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="js/mathsQuestions.js"></script>
+  
+    <title>Maths Quiz</title>
+</head>
+<body onload="welcome(), setAnswers1()">
+    
+    
+    <main>
+        <header>
+            <p id="nameWelcome"></p>
+            <p id="dateTime"></p>
+        </header>
+        <div class="quizCon">
+            <div id="feedbackFlash"></div>
+            <div id="feedbackFlash2"></div>
+            <div id="feedbackFlash3"></div>
+            <div id="feedbackFlash4"></div>
+            <div id="feedbackFlash5"></div>
+            <div class="questionCon">
+                <div id="questionHeader">
+                    <div id="backButtonCon">
+                    <button id="backButtonA" onclick="returnHome()" >
+                        <img src="images/house-solid.svg" alt="" id="backButton">
+                    </button>
+                 
+                    <button id="backButtonC" onclick="refreshPage()" >
+                        <img src="images/rotate-right-solid.svg" alt="" id="backButton">
+                    </button>
+                </div>
+                    <h1 id="questionHeaderText"></h1>
+                    <div id="quizScoreCon">
+                        <h1 id="quizScoreText"></h1>
+                    </div>
+                </div>
+                <div id="question">
+                    <h3 for="aq0" id="q0"></h3>
+                </div>
+                <div id="answerCon">
+                    <div class="answerInput">
+                    <input type="radio" onclick="selected()" name="q0" value="1">
+                    <p id="a0"></p>
+                    </div>
+                    <div class="answerInput">
+                    <input type="radio" onclick="selected2()" name="q0" value="2">
+                    <p id="a1"></p>
+                </div>
+                    <div class="answerInput">
+                    <input type="radio" onclick="selected3()" name="q0" value="3">
+                    <p id="a2"></p>
+                </div>
+                    <div class="answerInput">
+                    <input type="radio" onclick="selected4()" name="q0" value="4">
+                    <p id="a3"></p>
+                </div>
+                </div>
+                <div id="completeImg">
+                    <img id="correctImg" src="images/square-check-solid.svg" alt="">
+                    <img id="incorrectImg" src="images/square-xmark-solid.svg" alt="">
+                </div>
+                <div id="feedbackCon">
+                    <h3 id="feedbackText"></h3>
+                </div>
+                <div id="nextButton">
+                    <form id="keepScore3">
+                    <input type="text" id="quizScoreCounterMat">
+                        <button id="quizButton" type="submit" onclick="checkAnswers1()" >
+                            <h1 id="quizButtonText">Next</h1>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/getCookieScript.js"></script>
+    <script src="js/quizScoreCookie.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="js/getCookieScript.js"></script>
+    <script src="js/quizScoreCookie.js"></script>
+    <script src="js/flickity.pkgf.min.js"></script>
+    <title>Select a quiz</title>
+</head>
+<body onload="welcome(), displayScore1(), displayScore2(), displayScore3(), displayScore4(), displayScore5(), displayScore6()">
+    <p id="scoreC"></p>
+    <main>
+        <header>
+            <p id="nameWelcome"></p>
+            <p id="dateTime"></p>
+        </header>
+        <div class="quizTabCon">
+            <div id="indexHeader">
+                <p>Select a quiz:</p>
+            </div>
+            <div class="quizTabCon2 js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="quizTab">
+                <a href="geography.html">
+                <img src="images/geography.jpg" alt="">
+                <div class="quizName quizGeography">
+                    <h1 id="quizNameText">Geography</h1>
+                    <h1 id="quizScoreStickerGeo"></h1>
+                </div>
+            </a>
+            </div>
+            <div class="quizTab">
+                <a href="statistics.html">
+                <img src="images/statistics.jpg" alt="">
+                <div class="quizName quizStatistics">
+                    <h1 id="quizNameText">Statistics</h1>
+                    <h1 id="quizScoreStickerSta"></h1>
+                </div>
+                </a>
+            </div>
+            <div class="quizTab">
+
+                <a href="history.html">
+                <img src="images/history.jpg" alt="">
+                <div class="quizName quizHistory">
+                    <h1 id="quizNameText">History</h1>
+                    <h1 id="quizScoreStickerHis"></h1>
+                </div>
+                </a>
+            </div>
+            <div class="quizTab">
+
+                <a href="maths.html">
+                <img src="images/maths.jpg" alt="">
+                <div class="quizName quizMaths">
+                    <h1 id="quizNameText">Maths</h1>
+                    <h1 id="quizScoreStickerMat"></h1>
+                </div>
+                </a>
+            </div>
+            <div class="quizTab">
+                <a href="physics.html">
+                <img src="images/physics.jpg" alt="">
+                <div class="quizName quizPhysics">
+                    <h1 id="quizNameText">Physics</h1>
+                    <h1 id="quizScoreStickerPhy"></h1>
+                </div>
+                </a>
+            </div>
+            <div class="quizTab">
+                <a href="chemistry.html">
+                <img src="images/chemistry.jpg" alt="">
+                <div class="quizName quizChemistry">
+                    <h1 id="quizNameText">Chemistry</h1>
+                    <h1 id="quizScoreStickerChe"></h1>
+                </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="quizTabCon3">
+            <div class="quizTab">
+                <a href="geography.html">
+                <img src="images/geography.jpg" alt="">
+                <div class="quizName quizGeography">
+                    <h1 id="quizNameText">Geography</h1>
+                    <h1 id="quizScoreStickerGeo2"></h1>
+                </div>
+            </a>
+            </div>
+            <div class="quizTab">
+                <a href="statistics.html">
+                <img src="images/statistics.jpg" alt="">
+                <div class="quizName quizStatistics">
+                    <h1 id="quizNameText">Statistics</h1>
+                    <h1 id="quizScoreStickerSta2"></h1>
+                </div>
+                </a>
+            </div>
+            <div class="quizTab">
+
+                <a href="history.html">
+                <img src="images/history.jpg" alt="">
+                <div class="quizName quizHistory">
+                    <h1 id="quizNameText">History</h1>
+                    <h1 id="quizScoreStickerHis2"></h1>
+                </div>
+                </a>
+            </div>
+            <div class="quizTab">
+
+                <a href="maths.html">
+                <img src="images/maths.jpg" alt="">
+                <div class="quizName quizMaths">
+                    <h1 id="quizNameText">Maths</h1>
+                    <h1 id="quizScoreStickerMat2"></h1>
+                </div>
+                </a>
+            </div>
+            <div class="quizTab">
+                <a href="physics.html">
+                <img src="images/physics.jpg" alt="">
+                <div class="quizName quizPhysics">
+                    <h1 id="quizNameText">Physics</h1>
+                    <h1 id="quizScoreStickerPhy2"></h1>
+                </div>
+                </a>
+            </div>
+            <div class="quizTab">
+                <a href="chemistry.html">
+                <img src="images/chemistry.jpg" alt="">
+                <div class="quizName quizChemistry">
+                    <h1 id="quizNameText">Chemistry</h1>
+                    <h1 id="quizScoreStickerChe2"></h1>
+                </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="js/flickity.pkgf.min.js"></script>
+</body>
+</html>
