@@ -1,8 +1,6 @@
 var counterC = 0;
 var counterW = 0;
 
-
-
 let questions = [
     "What is the capital of Scotland?",
     "What currency do they use in Japan?",
@@ -171,8 +169,6 @@ function backQuestion5(){
         document.getElementById("backButtonA").setAttribute("onclick", "backQuestion4()");
     }
 }
-
-
 
 function flash(){
     document.getElementById("feedbackFlash").style.display = "none";

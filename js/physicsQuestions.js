@@ -4,12 +4,12 @@ var counterW = 0;
 
 
 let questions = [
-    "What is the capital of Scotland?",
-    "What currency do they use in Japan?",
-    "How many states are there in the USA?",
-    "What is the capital of Poland?",
-    "What currency do they use in India?"
-]
+    "What is the speed of light in a vacuum?",
+    "What is the unit of force in physics?",
+    "What is the acceleration due to gravity on Earth?",
+    "What is the primary source of energy for the Earth?",
+    "What is the formula for calculating force in physics?",
+];
 
 function selected(){
     document.getElementById("a1").style.backgroundColor = "#afafaf";
@@ -53,35 +53,38 @@ function selected4(){
 }
 
 let answers = [
-    "Glasgow",
-    "Edinburgh",
-    "Dundee",
-    "Aberdeen",
-]
+    "150,000 km/s",
+    "1,000 km/s",
+    "300,000 km/s", // Correct answer
+    "30,000 km/s"
+];
+
 let answers2 = [
-    "Yen",
-    "Dollar",
-    "Euro",
-    "Won",
-]
+    "Joule",
+    "Watt",
+    "Pascal",
+    "Newton" // Correct answer
+];
+
 let answers3 = [
-    "46",
-    "48",
-    "50",
-    "52",
-]
+    "9.8 m/s²", // Correct answer
+    "10 m/s²",
+    "8.5 m/s²",
+    "12 m/s²"
+];
+
 let answers4 = [
-    "Kraków",
-    "Katowice",
-    "Gdańsk",
-    "Warsaw",
-]
+    "The Sun", // Correct answer
+    "The Moon",
+    "Wind",
+    "Geothermal Energy"
+];
 let answers5 = [
-    "Peso",
-    "Rupee",
-    "złoty",
-    "Dinar",
-]
+    "Force = Mass ÷ Acceleration",
+    "Force = Mass × Acceleration", // Correct answer
+    "Force = Mass + Acceleration",
+    "Force = Mass - Acceleration"
+];
 
 function backQuestion(){
     document.getElementById("backButtonA").style.display = "flex";
@@ -552,7 +555,7 @@ function refreshPage(){
 function getCorrectAnswers1(questionIndex){
     switch (questionIndex){
         case 0:
-            return ["2"];
+            return ["3"];
             default:
                 return [];
     }
@@ -560,7 +563,7 @@ function getCorrectAnswers1(questionIndex){
 function getCorrectAnswers2(question2Index){
     switch (question2Index){
         case 0:
-            return ["1"];
+            return ["4"];
             default:
                 return [];
     }
@@ -568,7 +571,7 @@ function getCorrectAnswers2(question2Index){
 function getCorrectAnswers3(question3Index){
     switch (question3Index){
         case 0:
-            return ["3"];
+            return ["1"];
             default:
                 return [];
     }
@@ -576,7 +579,7 @@ function getCorrectAnswers3(question3Index){
 function getCorrectAnswers4(question4Index){
     switch (question4Index){
         case 0:
-            return ["4"];
+            return ["1"];
             default:
                 return [];
     }

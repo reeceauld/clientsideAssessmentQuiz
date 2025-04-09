@@ -1,15 +1,13 @@
 var counterC = 0;
 var counterW = 0;
 
-
-
 let questions = [
-    "What is the capital of Scotland?",
-    "What currency do they use in Japan?",
-    "How many states are there in the USA?",
-    "What is the capital of Poland?",
-    "What currency do they use in India?"
-]
+    "What is the chemical symbol for water?",
+    "What is the atomic number of carbon?",
+    "What gas do plants absorb from the atmosphere during photosynthesis?",
+    "What is the pH value of a neutral substance like pure water?",
+    "What is the chemical formula for table salt?",
+];
 
 function selected(){
     document.getElementById("a1").style.backgroundColor = "#afafaf";
@@ -53,35 +51,39 @@ function selected4(){
 }
 
 let answers = [
-    "Glasgow",
-    "Edinburgh",
-    "Dundee",
-    "Aberdeen",
-]
+    "O2",
+    "H2O", // Correct answer
+    "CO2",
+    "H2"
+];
+
 let answers2 = [
-    "Yen",
-    "Dollar",
-    "Euro",
-    "Won",
-]
+    "6", // Correct answer
+    "8",
+    "12",
+    "14"
+];
+
 let answers3 = [
-    "46",
-    "48",
-    "50",
-    "52",
-]
+    "Oxygen",
+    "Nitrogen",
+    "Hydrogen",
+    "Carbon dioxide" // Correct answer
+];
+
 let answers4 = [
-    "Kraków",
-    "Katowice",
-    "Gdańsk",
-    "Warsaw",
-]
+    "7", // Correct answer
+    "0",
+    "14",
+    "5"
+];
+
 let answers5 = [
-    "Peso",
-    "Rupee",
-    "złoty",
-    "Dinar",
-]
+    "KCl",
+    "HCl",
+    "NaCl", // Correct answer
+    "CaCl2"
+];
 
 function backQuestion(){
     document.getElementById("backButtonA").style.display = "flex";
@@ -172,22 +174,30 @@ function backQuestion5(){
     }
 }
 
-
-
 function flash(){
     document.getElementById("feedbackFlash").style.display = "none";
+    document.getElementById("answerFeedback").style.height = "0px"
+    document.getElementById("answerFeedback").style.opacity = "0"
 }
 function flash2(){
     document.getElementById("feedbackFlash2").style.display = "none";
+        document.getElementById("answerFeedback2").style.height = "0px"
+    document.getElementById("answerFeedback2").style.opacity = "0"
 }
 function flash3(){
     document.getElementById("feedbackFlash3").style.display = "none";
+        document.getElementById("answerFeedback3").style.height = "0px"
+    document.getElementById("answerFeedback3").style.opacity = "0"
 }
 function flash4(){
     document.getElementById("feedbackFlash4").style.display = "none";
+        document.getElementById("answerFeedback4").style.height = "0px"
+    document.getElementById("answerFeedback4").style.opacity = "0"
 }
 function flash5(){
     document.getElementById("feedbackFlash5").style.display = "none";
+        document.getElementById("answerFeedback5").style.height = "0px"
+    document.getElementById("answerFeedback5").style.opacity = "0"
 }
 function setAnswers1(){
 
@@ -263,6 +273,11 @@ function checkAnswers1(){
                 document.getElementById("backButtonA").style.display = "none";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterChe").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "green"
+                document.getElementById("feedbackh3").innerHTML = "Correct! The answer was Edinburgh";
                 setAnswers2();
             }
             else{
@@ -283,6 +298,11 @@ function checkAnswers1(){
                 document.getElementById("backButtonA").style.display = "none";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterChe").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "red"
+                document.getElementById("feedbackh3").innerHTML = "Incorrect! The answer was Edinburgh";
                 setAnswers2();
             }
         }
@@ -319,6 +339,11 @@ function checkAnswers2(){
                 document.getElementById("feedbackFlash2").style.backgroundColor = "green";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterChe").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "green"
+                document.getElementById("feedbackh3").innerHTML = "Correct! The answer was Edinburgh";
                 setAnswers3();
             }
             else{
@@ -338,6 +363,11 @@ function checkAnswers2(){
                 document.getElementById("feedbackFlash2").style.backgroundColor = "red";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterChe").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "red"
+                document.getElementById("feedbackh3").innerHTML = "Incorrect! The answer was Edinburgh";
                 setAnswers3();
             }
         }
@@ -373,6 +403,11 @@ function checkAnswers3(){
                 document.getElementById("feedbackFlash3").style.backgroundColor = "green";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterChe").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "green"
+                document.getElementById("feedbackh3").innerHTML = "Correct! The answer was Edinburgh";
                 setAnswers4();
             }
             else{
@@ -392,6 +427,11 @@ function checkAnswers3(){
                 document.getElementById("feedbackFlash3").style.backgroundColor = "red";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterChe").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "red"
+                document.getElementById("feedbackh3").innerHTML = "Incorrect! The answer was Edinburgh";
                 setAnswers4();
             }
         }
@@ -427,6 +467,11 @@ function checkAnswers4(){
                 document.getElementById("feedbackFlash4").style.backgroundColor = "green";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterChe").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "green"
+                document.getElementById("feedbackh3").innerHTML = "Correct! The answer was Edinburgh";
                 setAnswers5();
             }
             else{
@@ -446,6 +491,12 @@ function checkAnswers4(){
                 document.getElementById("feedbackFlash4").style.backgroundColor = "red";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterChe").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "red"
+                document.getElementById("feedbackh3").innerHTML = "Incorrect! The answer was Edinburgh";
+                
                 setAnswers5();
             }
         }
@@ -482,6 +533,11 @@ function checkAnswers5(){
                 document.getElementById("feedbackFlash5").style.backgroundColor = "green";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterChe").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "green"
+                document.getElementById("feedbackh3").innerHTML = "Correct! The answer was Edinburgh";
                 quizComplete();
             }
             else{
@@ -502,6 +558,11 @@ function checkAnswers5(){
                 document.getElementById("feedbackFlash5").style.backgroundColor = "red";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterChe").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "red"
+                document.getElementById("feedbackh3").innerHTML = "Incorrect! The answer was Edinburgh";
                 quizComplete();
             }
         }
@@ -568,7 +629,7 @@ function getCorrectAnswers2(question2Index){
 function getCorrectAnswers3(question3Index){
     switch (question3Index){
         case 0:
-            return ["3"];
+            return ["4"];
             default:
                 return [];
     }
@@ -576,7 +637,7 @@ function getCorrectAnswers3(question3Index){
 function getCorrectAnswers4(question4Index){
     switch (question4Index){
         case 0:
-            return ["4"];
+            return ["1"];
             default:
                 return [];
     }
@@ -584,7 +645,7 @@ function getCorrectAnswers4(question4Index){
 function getCorrectAnswers5(question5Index){
     switch (question5Index){
         case 0:
-            return ["2"];
+            return ["3"];
             default:
                 return [];
     }

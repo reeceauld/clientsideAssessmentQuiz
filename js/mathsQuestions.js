@@ -4,12 +4,12 @@ var counterW = 0;
 
 
 let questions = [
-    "What is the capital of Scotland?",
-    "What currency do they use in Japan?",
-    "How many states are there in the USA?",
-    "What is the capital of Poland?",
-    "What currency do they use in India?"
-]
+    "What is the value of 7 × 8?",
+    "What is the square root of 144?",
+    "What is 12 × 4?",
+    "What is the square root of 81?",
+    "What is 15% of 200?"
+];
 
 function selected(){
     document.getElementById("a1").style.backgroundColor = "#afafaf";
@@ -53,34 +53,34 @@ function selected4(){
 }
 
 let answers = [
-    "Glasgow",
-    "Edinburgh",
-    "Dundee",
-    "Aberdeen",
+    "56", // c
+    "64",
+    "40",
+    "48",
 ]
 let answers2 = [
-    "Yen",
-    "Dollar",
-    "Euro",
-    "Won",
+    "11",
+    "12", // c
+    "13", 
+    "14",
 ]
 let answers3 = [
-    "46",
-    "48",
-    "50",
-    "52",
+    "24",
+    "36",
+    "48", // c
+    "60",
 ]
 let answers4 = [
-    "Kraków",
-    "Katowice",
-    "Gdańsk",
-    "Warsaw",
+    "8",
+    "9", // c
+    "10",
+    "11",
 ]
 let answers5 = [
-    "Peso",
-    "Rupee",
-    "złoty",
-    "Dinar",
+    "15",
+    "20",
+    "25",
+    "30", // c
 ]
 
 function backQuestion(){
@@ -552,7 +552,7 @@ function refreshPage(){
 function getCorrectAnswers1(questionIndex){
     switch (questionIndex){
         case 0:
-            return ["2"];
+            return ["1"];
             default:
                 return [];
     }
@@ -560,7 +560,7 @@ function getCorrectAnswers1(questionIndex){
 function getCorrectAnswers2(question2Index){
     switch (question2Index){
         case 0:
-            return ["1"];
+            return ["2"];
             default:
                 return [];
     }
@@ -576,7 +576,7 @@ function getCorrectAnswers3(question3Index){
 function getCorrectAnswers4(question4Index){
     switch (question4Index){
         case 0:
-            return ["4"];
+            return ["2"];
             default:
                 return [];
     }
@@ -584,7 +584,7 @@ function getCorrectAnswers4(question4Index){
 function getCorrectAnswers5(question5Index){
     switch (question5Index){
         case 0:
-            return ["2"];
+            return ["4"];
             default:
                 return [];
     }

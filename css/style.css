@@ -515,7 +515,7 @@ header #dateTime{
     align-items: center;
     justify-content: center;
     text-wrap: nowrap;
-    font-size: 36px;
+    font-size: clamp(28px, 3vw, 36px);
 }
 #questionHeaderText h1{
     position: absolute;
@@ -581,7 +581,7 @@ header #dateTime{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 24px;
+    font-size: clamp(18px, 2.5vw, 24px);
 }
 #answerFeedback{
     height: 0px;
@@ -768,12 +768,13 @@ header #dateTime{
     background-color: #afafaf;
     color: #ffffff;
     font-weight: 700;
-    font-size: 18px;
+    font-size: clamp(16px, 2.25vw, 22px);
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
+    text-align: center;
 }
 #completeImg{
     width: 100%;
@@ -810,7 +811,6 @@ header #dateTime{
 @media screen and (min-width: 350px){
     #answerCon p{
         width: 37.5%;
-        font-size: 22px;
     }
     .questionCon{
         width: 90%;
