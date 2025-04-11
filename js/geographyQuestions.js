@@ -211,7 +211,6 @@ function setAnswers2(){
         document.getElementById("a"+i).innerHTML = answers2[i];
         document.getElementById("q0").innerHTML = questions[1];
         document.getElementById("questionHeaderText").innerHTML = "Question " + [2] +":";
-     
     }
     setTimeout(flash, 1)
     
@@ -276,7 +275,7 @@ function checkAnswers1(){
                 document.getElementById("answerFeedback").style.opacity = "1"
                 document.getElementById("answerFeedback").style.animationPlayState = "running"
                 document.getElementById("answerFeedback").style.color = "green"
-                document.getElementById("feedbackh3").innerHTML = "Correct! The answer was Edinburgh";
+                document.getElementById("feedbackh3").innerHTML = "Correct! The answer was " + answers[1];
                 setAnswers2();
             }
             else{
@@ -301,7 +300,7 @@ function checkAnswers1(){
                 document.getElementById("answerFeedback").style.opacity = "1"
                 document.getElementById("answerFeedback").style.animationPlayState = "running"
                 document.getElementById("answerFeedback").style.color = "red"
-                document.getElementById("feedbackh3").innerHTML = "Incorrect! The answer was Edinburgh";
+                document.getElementById("feedbackh3").innerHTML = "Incorrect! The answer was " + answers[1];
                 setAnswers2();
             }
         }
@@ -343,7 +342,7 @@ function checkAnswers2(){
                 document.getElementById("answerFeedback2").style.opacity = "1"
                 document.getElementById("answerFeedback2").style.animationPlayState = "running"
                 document.getElementById("answerFeedback2").style.color = "green"
-                document.getElementById("feedbackh32").innerHTML = "Correct! The answer was Yen";
+                document.getElementById("feedbackh32").innerHTML = "Correct! The answer was " + answers2[0];
                 setAnswers3();
             }
             else{
@@ -368,7 +367,7 @@ function checkAnswers2(){
                 document.getElementById("answerFeedback2").style.opacity = "1"
                 document.getElementById("answerFeedback2").style.animationPlayState = "running"
                 document.getElementById("answerFeedback2").style.color = "red"
-                document.getElementById("feedbackh32").innerHTML = "Incorrect! The answer was Yen";
+                document.getElementById("feedbackh32").innerHTML = "Incorrect! The answer was " + answers2[0];
                 setAnswers3();
             }
         }
@@ -409,7 +408,7 @@ function checkAnswers3(){
                 document.getElementById("answerFeedback3").style.opacity = "1"
                 document.getElementById("answerFeedback3").style.animationPlayState = "running"
                 document.getElementById("answerFeedback3").style.color = "green"
-                document.getElementById("feedbackh33").innerHTML = "Correct! The answer was 50";
+                document.getElementById("feedbackh33").innerHTML = "Correct! The answer was " + answers3[2];
                 setAnswers4();
             }
             else{
@@ -434,7 +433,7 @@ function checkAnswers3(){
                 document.getElementById("answerFeedback3").style.opacity = "1"
                 document.getElementById("answerFeedback3").style.animationPlayState = "running"
                 document.getElementById("answerFeedback3").style.color = "red"
-                document.getElementById("feedbackh33").innerHTML = "Incorrect! The answer was 50";
+                document.getElementById("feedbackh33").innerHTML = "Incorrect! The answer was " + answers3[2];
                 setAnswers4();
             }
         }
@@ -475,7 +474,7 @@ function checkAnswers4(){
                 document.getElementById("answerFeedback4").style.opacity = "1"
                 document.getElementById("answerFeedback4").style.animationPlayState = "running"
                 document.getElementById("answerFeedback4").style.color = "green"
-                document.getElementById("feedbackh34").innerHTML = "Correct! The answer was Warsaw";
+                document.getElementById("feedbackh34").innerHTML = "Correct! The answer was " + answers4[3];
                 setAnswers5();
             }
             else{
@@ -500,7 +499,7 @@ function checkAnswers4(){
                 document.getElementById("answerFeedback4").style.opacity = "1"
                 document.getElementById("answerFeedback4").style.animationPlayState = "running"
                 document.getElementById("answerFeedback4").style.color = "red"
-                document.getElementById("feedbackh34").innerHTML = "Incorrect! The answer was Warsaw";
+                document.getElementById("feedbackh34").innerHTML = "Incorrect! The answer was " + answers4[3];
                 setAnswers5();
             }
         }
@@ -542,7 +541,7 @@ function checkAnswers5(){
                 document.getElementById("answerFeedback5").style.opacity = "1"
                 document.getElementById("answerFeedback5").style.animationPlayState = "running"
                 document.getElementById("answerFeedback5").style.color = "green"
-                document.getElementById("feedbackh35").innerHTML = "Correct! The answer was Rupee";
+                document.getElementById("feedbackh35").innerHTML = "Correct! The answer was " + answers5[1];
                 quizComplete();
             }
             else{
@@ -568,7 +567,7 @@ function checkAnswers5(){
                 document.getElementById("answerFeedback5").style.opacity = "1"
                 document.getElementById("answerFeedback5").style.animationPlayState = "running"
                 document.getElementById("answerFeedback5").style.color = "red"
-                document.getElementById("feedbackh35").innerHTML = "Incorrect! The answer was Rupee";
+                document.getElementById("feedbackh35").innerHTML = "Incorrect! The answer was " + answers5[1];
                 quizComplete();
             }
         }

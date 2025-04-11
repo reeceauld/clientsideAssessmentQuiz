@@ -176,18 +176,28 @@ function backQuestion5(){
 
 function flash(){
     document.getElementById("feedbackFlash").style.display = "none";
+    document.getElementById("answerFeedback").style.height = "0px"
+    document.getElementById("answerFeedback").style.opacity = "0"
 }
 function flash2(){
     document.getElementById("feedbackFlash2").style.display = "none";
+        document.getElementById("answerFeedback2").style.height = "0px"
+    document.getElementById("answerFeedback2").style.opacity = "0"
 }
 function flash3(){
     document.getElementById("feedbackFlash3").style.display = "none";
+        document.getElementById("answerFeedback3").style.height = "0px"
+    document.getElementById("answerFeedback3").style.opacity = "0"
 }
 function flash4(){
     document.getElementById("feedbackFlash4").style.display = "none";
+        document.getElementById("answerFeedback4").style.height = "0px"
+    document.getElementById("answerFeedback4").style.opacity = "0"
 }
 function flash5(){
     document.getElementById("feedbackFlash5").style.display = "none";
+        document.getElementById("answerFeedback5").style.height = "0px"
+    document.getElementById("answerFeedback5").style.opacity = "0"
 }
 function setAnswers1(){
 
@@ -262,6 +272,11 @@ function checkAnswers1(){
                 document.getElementById("backButtonA").style.display = "none";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterHis").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "green"
+                document.getElementById("feedbackh3").innerHTML = "Correct! The answer was " + answers[1];
                 setAnswers2();
             }
             else{
@@ -282,6 +297,11 @@ function checkAnswers1(){
                 document.getElementById("backButtonA").style.display = "none";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterHis").value = (counterC);
+                document.getElementById("answerFeedback").style.height = "40px"
+                document.getElementById("answerFeedback").style.opacity = "1"
+                document.getElementById("answerFeedback").style.animationPlayState = "running"
+                document.getElementById("answerFeedback").style.color = "red"
+                document.getElementById("feedbackh3").innerHTML = "Incorrect! The answer was " + answers[1];
                 setAnswers2();
             }
         }
@@ -318,6 +338,11 @@ function checkAnswers2(){
                 document.getElementById("feedbackFlash2").style.backgroundColor = "green";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterHis").value = (counterC);
+                document.getElementById("answerFeedback2").style.height = "40px"
+                document.getElementById("answerFeedback2").style.opacity = "1"
+                document.getElementById("answerFeedback2").style.animationPlayState = "running"
+                document.getElementById("answerFeedback2").style.color = "green"
+                document.getElementById("feedbackh32").innerHTML = "Correct! The answer was " + answers2[3];
                 setAnswers3();
             }
             else{
@@ -337,6 +362,11 @@ function checkAnswers2(){
                 document.getElementById("feedbackFlash2").style.backgroundColor = "red";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterHis").value = (counterC);
+                document.getElementById("answerFeedback2").style.height = "40px"
+                document.getElementById("answerFeedback2").style.opacity = "1"
+                document.getElementById("answerFeedback2").style.animationPlayState = "running"
+                document.getElementById("answerFeedback2").style.color = "red"
+                document.getElementById("feedbackh32").innerHTML = "Incorrect! The answer was " + answers2[3];
                 setAnswers3();
             }
         }
@@ -372,6 +402,11 @@ function checkAnswers3(){
                 document.getElementById("feedbackFlash3").style.backgroundColor = "green";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterHis").value = (counterC);
+                document.getElementById("answerFeedback3").style.height = "40px"
+                document.getElementById("answerFeedback3").style.opacity = "1"
+                document.getElementById("answerFeedback3").style.animationPlayState = "running"
+                document.getElementById("answerFeedback3").style.color = "green"
+                document.getElementById("feedbackh33").innerHTML = "Correct! The answer was " + answers3[3];
                 setAnswers4();
             }
             else{
@@ -391,6 +426,11 @@ function checkAnswers3(){
                 document.getElementById("feedbackFlash3").style.backgroundColor = "red";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterHis").value = (counterC);
+                document.getElementById("answerFeedback3").style.height = "40px"
+                document.getElementById("answerFeedback3").style.opacity = "1"
+                document.getElementById("answerFeedback3").style.animationPlayState = "running"
+                document.getElementById("answerFeedback3").style.color = "red"
+                document.getElementById("feedbackh33").innerHTML = "Incorrect! The answer was " + answers3[3];
                 setAnswers4();
             }
         }
@@ -426,6 +466,11 @@ function checkAnswers4(){
                 document.getElementById("feedbackFlash4").style.backgroundColor = "green";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterHis").value = (counterC);
+                document.getElementById("answerFeedback4").style.height = "40px"
+                document.getElementById("answerFeedback4").style.opacity = "1"
+                document.getElementById("answerFeedback4").style.animationPlayState = "running"
+                document.getElementById("answerFeedback4").style.color = "green"
+                document.getElementById("feedbackh34").innerHTML = "Correct! The answer was " + answers4[2];
                 setAnswers5();
             }
             else{
@@ -445,6 +490,11 @@ function checkAnswers4(){
                 document.getElementById("feedbackFlash4").style.backgroundColor = "red";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterHis").value = (counterC);
+                document.getElementById("answerFeedback4").style.height = "40px"
+                document.getElementById("answerFeedback4").style.opacity = "1"
+                document.getElementById("answerFeedback4").style.animationPlayState = "running"
+                document.getElementById("answerFeedback4").style.color = "red"
+                document.getElementById("feedbackh34").innerHTML = "Incorrect! The answer was " + answers4[2];
                 setAnswers5();
             }
         }
@@ -481,6 +531,11 @@ function checkAnswers5(){
                 document.getElementById("feedbackFlash5").style.backgroundColor = "green";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterHis").value = (counterC);
+                document.getElementById("answerFeedback5").style.height = "40px"
+                document.getElementById("answerFeedback5").style.opacity = "1"
+                document.getElementById("answerFeedback5").style.animationPlayState = "running"
+                document.getElementById("answerFeedback5").style.color = "green"
+                document.getElementById("feedbackh35").innerHTML = "Correct! The answer was " + answers5[0];
                 quizComplete();
             }
             else{
@@ -501,6 +556,11 @@ function checkAnswers5(){
                 document.getElementById("feedbackFlash5").style.backgroundColor = "red";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterHis").value = (counterC);
+                document.getElementById("answerFeedback5").style.height = "40px"
+                document.getElementById("answerFeedback5").style.opacity = "1"
+                document.getElementById("answerFeedback5").style.animationPlayState = "running"
+                document.getElementById("answerFeedback5").style.color = "red"
+                document.getElementById("feedbackh35").innerHTML = "Incorrect! The answer was " + answers5[0];
                 quizComplete();
             }
         }
