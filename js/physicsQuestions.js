@@ -272,14 +272,14 @@ function checkAnswers1(){
                 document.getElementById("a2").style.backgroundColor = "#afafaf";
                 document.getElementById("a3").style.backgroundColor = "#afafaf";
                 document.getElementById("feedbackFlash").style.display = "flex";
-                document.getElementById("feedbackFlash").style.backgroundColor = "green";
+                document.getElementById("feedbackFlash").style.backgroundColor = "rgb(24, 194, 24)";
                 document.getElementById("backButtonA").style.display = "none";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterPhy").value = (counterC);
                 document.getElementById("answerFeedback").style.height = "40px"
                 document.getElementById("answerFeedback").style.opacity = "1"
                 document.getElementById("answerFeedback").style.animationPlayState = "running"
-                document.getElementById("answerFeedback").style.color = "green"
+                document.getElementById("answerFeedback").style.color = "rgb(24, 194, 24)"
                 document.getElementById("feedbackh3").innerHTML = "Correct! The answer was " + answers[2];
                 setAnswers2();
             }
@@ -339,13 +339,13 @@ function checkAnswers2(){
                 document.getElementById("a2").style.backgroundColor = "#afafaf";
                 document.getElementById("a3").style.backgroundColor = "#afafaf";
                 document.getElementById("feedbackFlash2").style.display = "flex";
-                document.getElementById("feedbackFlash2").style.backgroundColor = "green";
+                document.getElementById("feedbackFlash2").style.backgroundColor = "rgb(24, 194, 24)";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterPhy").value = (counterC);
                 document.getElementById("answerFeedback2").style.height = "40px"
                 document.getElementById("answerFeedback2").style.opacity = "1"
                 document.getElementById("answerFeedback2").style.animationPlayState = "running"
-                document.getElementById("answerFeedback2").style.color = "green"
+                document.getElementById("answerFeedback2").style.color = "rgb(24, 194, 24)"
                 document.getElementById("feedbackh32").innerHTML = "Correct! The answer was " + answers2[3];
                 setAnswers3();
             }
@@ -403,13 +403,13 @@ function checkAnswers3(){
                 document.getElementById("a2").style.backgroundColor = "#afafaf";
                 document.getElementById("a3").style.backgroundColor = "#afafaf";
                 document.getElementById("feedbackFlash3").style.display = "flex";
-                document.getElementById("feedbackFlash3").style.backgroundColor = "green";
+                document.getElementById("feedbackFlash3").style.backgroundColor = "rgb(24, 194, 24)";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterPhy").value = (counterC);
                 document.getElementById("answerFeedback3").style.height = "40px"
                 document.getElementById("answerFeedback3").style.opacity = "1"
                 document.getElementById("answerFeedback3").style.animationPlayState = "running"
-                document.getElementById("answerFeedback3").style.color = "green"
+                document.getElementById("answerFeedback3").style.color = "rgb(24, 194, 24)"
                 document.getElementById("feedbackh33").innerHTML = "Correct! The answer was " + answers3[0];
                 setAnswers4();
             }
@@ -467,13 +467,13 @@ function checkAnswers4(){
                 document.getElementById("a2").style.backgroundColor = "#afafaf";
                 document.getElementById("a3").style.backgroundColor = "#afafaf";
                 document.getElementById("feedbackFlash4").style.display = "flex";
-                document.getElementById("feedbackFlash4").style.backgroundColor = "green";
+                document.getElementById("feedbackFlash4").style.backgroundColor = "rgb(24, 194, 24)";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterPhy").value = (counterC);
                 document.getElementById("answerFeedback4").style.height = "40px"
                 document.getElementById("answerFeedback4").style.opacity = "1"
                 document.getElementById("answerFeedback4").style.animationPlayState = "running"
-                document.getElementById("answerFeedback4").style.color = "green"
+                document.getElementById("answerFeedback4").style.color = "rgb(24, 194, 24)"
                 document.getElementById("feedbackh34").innerHTML = "Correct! The answer was " + answers4[0];
                 setAnswers5();
             }
@@ -532,13 +532,13 @@ function checkAnswers5(){
                 document.getElementById("a2").style.backgroundColor = "#afafaf";
                 document.getElementById("a3").style.backgroundColor = "#afafaf";
                 document.getElementById("feedbackFlash5").style.display = "flex";
-                document.getElementById("feedbackFlash5").style.backgroundColor = "green";
+                document.getElementById("feedbackFlash5").style.backgroundColor = "rgb(24, 194, 24)";
                 document.getElementById("quizScoreText").innerHTML = (counterC) + "/5";
                 document.getElementById("quizScoreCounterPhy").value = (counterC);
                 document.getElementById("answerFeedback5").style.height = "40px"
                 document.getElementById("answerFeedback5").style.opacity = "1"
                 document.getElementById("answerFeedback5").style.animationPlayState = "running"
-                document.getElementById("answerFeedback5").style.color = "green"
+                document.getElementById("answerFeedback5").style.color = "rgb(24, 194, 24)"
                 document.getElementById("feedbackh35").innerHTML = "Correct! The answer was " + answers5[1];
                 quizComplete();
             }

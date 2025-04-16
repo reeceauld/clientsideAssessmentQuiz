@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: inter;
+    color: green;
     
 }
 main{
@@ -12,11 +13,18 @@ main{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    animation: backgroundMove 120s linear infinite;
+    animation: backgroundMove 100s linear infinite;
 }
 @keyframes backgroundMove{
     0% {background-position: 0}
     100% {background-position: 100vw}
+}
+@media screen and (max-width: 768px) {
+    main {
+        background-image: url("../images/background2.jpg");
+        background-size: contain;
+        background-position: top;
+    }
 }
 .container{
     width:100%;
@@ -102,12 +110,12 @@ header{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 header #nameWelcome{
-    padding-left: 2.5%;
+    padding-left: 25px;
 }
 header #dateTime{
     position: absolute;
     right: 0;
-    padding-right: 2.5%;
+    padding-right: 25px;
 }
 .quizTabCon{
     width: 100%;
@@ -182,6 +190,7 @@ header #dateTime{
     color: #ffffff;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerGeo {
     width: 100%;
@@ -193,6 +202,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerHis{
     width: 100%;
@@ -204,6 +214,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerMat{
     width: 100%;
@@ -215,6 +226,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerPhy{
     width: 100%;
@@ -226,6 +238,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerChe{
     width: 100%;
@@ -237,6 +250,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerSta{
     width: 100%;
@@ -248,6 +262,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerGeo2{
     width: 100%;
@@ -259,6 +274,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerHis2{
     width: 100%;
@@ -270,6 +286,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerMat2{
     width: 100%;
@@ -281,6 +298,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerPhy2{
     width: 100%;
@@ -292,6 +310,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerChe2{
     width: 100%;
@@ -303,6 +322,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreStickerSta2{
     width: 100%;
@@ -314,6 +334,7 @@ header #dateTime{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 0px 0px 15px 0px;
+    font-size: clamp(26px, 3vw, 34px);
 }
 #quizScoreCounterGeo{
     display: none;
@@ -422,7 +443,7 @@ header #dateTime{
     color: black;
     z-index: 0;
     animation-name: flash;
-    animation-duration: 1.25s;
+    animation-duration: 2s;
 }
 @keyframes flash{
     0% {display: flex;}
@@ -441,7 +462,7 @@ header #dateTime{
     color: black;
     z-index: 0;
     animation-name: flash2;
-    animation-duration: 1.25s;
+    animation-duration: 2s;
 }
 @keyframes flash2{
     0% {display: flex;}
@@ -460,7 +481,7 @@ header #dateTime{
     color: black;
     z-index: 0;
     animation-name: flash3;
-    animation-duration: 1.25s;
+    animation-duration: 2s;
 }
 @keyframes flash3{
     0% {display: flex;}
@@ -479,7 +500,7 @@ header #dateTime{
     color: black;
     z-index: 0;
     animation-name: flash4;
-    animation-duration: 1.25s;
+    animation-duration: 2s;
 }
 @keyframes flash4{
     0% {display: flex;}
@@ -498,7 +519,7 @@ header #dateTime{
     color: black;
     z-index: 0;
     animation-name: flash5;
-    animation-duration: 1.25s;
+    animation-duration: 2s;
 }
 @keyframes flash5{
     0% {display: flex;}
@@ -596,7 +617,7 @@ header #dateTime{
     align-items: center;
     text-align: center;
     animation-name: feedback;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-play-state: paused;
     font-size: clamp(12px, 2.5vw, 20px);
 }
@@ -618,7 +639,7 @@ header #dateTime{
     align-items: center;
     text-align: center;
     animation-name: feedback2;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-play-state: paused;
     font-size: clamp(12px, 2.5vw, 20px);
 }
@@ -640,7 +661,7 @@ header #dateTime{
     align-items: center;
     text-align: center;
     animation-name: feedback3;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-play-state: paused;
     font-size: clamp(12px, 2.5vw, 20px);
 }
@@ -662,7 +683,7 @@ header #dateTime{
     align-items: center;
     text-align: center;
     animation-name: feedback4;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-play-state: paused;
     font-size: clamp(12px, 2.5vw, 20px);
 }
@@ -684,7 +705,7 @@ header #dateTime{
     align-items: center;
     text-align: center;
     animation-name: feedback5;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-play-state: paused;
     font-size: clamp(12px, 2.5vw, 20px);
 }
